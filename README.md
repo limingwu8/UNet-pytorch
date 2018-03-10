@@ -22,3 +22,11 @@ pandas
 4. Run script train.py. The model will be saved under folder checkpoint.
 5. When making prediction using testing data, set train=False in utils.py, and run script train.py again. The prediction masks will be saved to the folder specified in Option class under utils.py, and the run-length-encoding csv file will be saved in current folder.
 ```
+
+## Training results
+
+# One example of prediction masks
+![image1](https://github.com/limingwu8/UNet-pytorch/blob/master/images/prediction_results01.png)
+
+# Training loss
+![image2](https://github.com/limingwu8/UNet-pytorch/blob/master/images/loss.png)
