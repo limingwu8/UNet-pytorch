@@ -1,0 +1,931 @@
+# with weight decay
+epoch: 1, loss: 0.10771283389823068
+epoch: 2, loss: 0.05409866277616294
+epoch: 3, loss: 0.04946235622767182
+epoch: 4, loss: 0.04618545125482515
+epoch: 5, loss: 0.04273399353648225
+epoch: 6, loss: 0.04288372482239668
+epoch: 7, loss: 0.04254990348237611
+epoch: 8, loss: 0.037294785131789035
+epoch: 9, loss: 0.03744326062068077
+
+# without weight decay
+
+epoch: 1, loss: 0.09116310598550453
+epoch: 2, loss: 0.04321037265028627
+epoch: 3, loss: 0.04048724705907738
+epoch: 4, loss: 0.039860469610652045
+epoch: 5, loss: 0.03545341351889961
+epoch: 6, loss: 0.03799905562828783
+epoch: 7, loss: 0.033651598912131576
+epoch: 8, loss: 0.032931994558090254
+epoch: 9, loss: 0.03656878872563885
+
+# MSE -> BCE
+
+epoch: 1, loss: 0.3846052848689613
+epoch: 2, loss: 0.19158876736071848
+epoch: 3, loss: 0.16123717511072755
+epoch: 4, loss: 0.1544495471309693
+epoch: 5, loss: 0.14261221533109034
+epoch: 6, loss: 0.12895197969018704
+epoch: 7, loss: 0.11366528753812115
+epoch: 8, loss: 0.13066996108474477
+epoch: 9, loss: 0.12063204043633527
+
+# RELU -> ELU
+
+epoch: 1, loss: 0.418757044843265
+epoch: 2, loss: 0.17865957266518048
+epoch: 3, loss: 0.13560956561317047
+epoch: 4, loss: 0.13553459441200608
+epoch: 5, loss: 0.12255305144935846
+epoch: 6, loss: 0.12043966007019792
+epoch: 7, loss: 0.11353101490420245
+epoch: 8, loss: 0.1043572690825732
+epoch: 9, loss: 0.10087539886479222
+epoch: 1, loss: 0.31370698334649205
+epoch: 2, loss: 0.17121569263482733
+epoch: 3, loss: 0.14539099160382257
+epoch: 4, loss: 0.1298476884507441
+epoch: 5, loss: 0.12703033112588205
+epoch: 6, loss: 0.11654078308492899
+epoch: 7, loss: 0.10952242305834911
+epoch: 8, loss: 0.10162937604556126
+epoch: 9, loss: 0.08895152218506805
+
+# kaiming_normal
+
+epoch: 1, loss: 0.255464950825886
+epoch: 2, loss: 0.1581662028745216
+epoch: 3, loss: 0.1448496969449999
+epoch: 4, loss: 0.14671995307851052
+epoch: 5, loss: 0.1326897790921586
+epoch: 6, loss: 0.12471183779416606
+epoch: 7, loss: 0.10663028934504837
+epoch: 8, loss: 0.11147788196103647
+epoch: 9, loss: 0.11100057081785053
+epoch: 1, loss: 0.44808145702284363
+epoch: 2, loss: 0.21687231886400177
+epoch: 1, loss: 0.2181003157415294
+epoch: 2, loss: 0.15931698179338127
+epoch: 3, loss: 0.13599872133428498
+epoch: 4, loss: 0.11577727636488687
+epoch: 5, loss: 0.1492538251498315
+epoch: 6, loss: 0.11872542740976703
+epoch: 7, loss: 0.11108246123850611
+epoch: 8, loss: 0.10305209029632222
+epoch: 9, loss: 0.09316365898121148
+epoch: 1, loss: 0.21039149461181036
+epoch: 2, loss: 0.15260535774619452
+epoch: 3, loss: 0.13968635586622571
+epoch: 4, loss: 0.14203002999004508
+epoch: 5, loss: 0.1332629305543378
+epoch: 6, loss: 0.1267515624806817
+epoch: 7, loss: 0.11689140689226665
+epoch: 8, loss: 0.11453179262545225
+epoch: 9, loss: 0.1265089629866582
+epoch: 10, loss: 0.11578055921875473
+epoch: 11, loss: 0.11211565368077052
+epoch: 12, loss: 0.11526682764191978
+epoch: 13, loss: 0.10519787866256333
+epoch: 14, loss: 0.09922170959180221
+epoch: 1, loss: 0.25720141746569425
+epoch: 2, loss: 0.15186889783944935
+epoch: 3, loss: 0.1467592113185674
+epoch: 4, loss: 0.1343171871766182
+epoch: 5, loss: 0.13360574506389508
+epoch: 6, loss: 0.1122924496053851
+epoch: 7, loss: 0.11478684176524569
+epoch: 8, loss: 0.10685602245419952
+epoch: 9, loss: 0.10141130972520582
+epoch: 10, loss: 0.09792424153004374
+epoch: 11, loss: 0.09916963612028797
+epoch: 12, loss: 0.095971322992617
+epoch: 13, loss: 0.09675911231066234
+epoch: 14, loss: 0.08702084810855533
+epoch: 15, loss: 0.08866237258189358
+epoch: 16, loss: 0.08445121589465998
+epoch: 17, loss: 0.07993987125311312
+epoch: 18, loss: 0.08295013984232875
+epoch: 19, loss: 0.07959131473242971
+epoch: 20, loss: 0.08159009551621109
+epoch: 21, loss: 0.08508320173963771
+epoch: 22, loss: 0.09932343097586584
+epoch: 23, loss: 0.08138542608607427
+epoch: 24, loss: 0.07456274345167913
+epoch: 25, loss: 0.07283936949845936
+epoch: 26, loss: 0.07262712667579763
+epoch: 27, loss: 0.06938352879868555
+epoch: 28, loss: 0.07358909424510784
+epoch: 29, loss: 0.06895224790787324
+epoch: 30, loss: 0.0730695495855928
+epoch: 31, loss: 0.06807583278194736
+epoch: 32, loss: 0.07292715156966421
+epoch: 33, loss: 0.0704019885244114
+epoch: 34, loss: 0.07013984615540332
+epoch: 35, loss: 0.07559289771182064
+epoch: 36, loss: 0.07396111179176452
+epoch: 37, loss: 0.06697882046656949
+epoch: 38, loss: 0.06948415653979671
+epoch: 39, loss: 0.06865818171146591
+epoch: 40, loss: 0.0648192656080937
+epoch: 41, loss: 0.0655015389451624
+epoch: 42, loss: 0.06634709590538737
+epoch: 43, loss: 0.06745092482638679
+epoch: 44, loss: 0.06393069735038028
+epoch: 45, loss: 0.06883655746475727
+epoch: 46, loss: 0.06595806951892362
+epoch: 47, loss: 0.06694433594488405
+epoch: 48, loss: 0.06287740229163319
+epoch: 49, loss: 0.06595904937421437
+epoch: 50, loss: 0.06235020962776616
+epoch: 51, loss: 0.06125234563036689
+epoch: 52, loss: 0.06192108354922051
+epoch: 53, loss: 0.06996482150861993
+epoch: 54, loss: 0.06225709303440193
+epoch: 55, loss: 0.06101265240951242
+epoch: 56, loss: 0.06226121325744316
+epoch: 57, loss: 0.06070887414222982
+epoch: 58, loss: 0.0618286904521353
+epoch: 59, loss: 0.0600005419712813
+epoch: 60, loss: 0.060241605028360415
+epoch: 61, loss: 0.060641979112655724
+epoch: 62, loss: 0.06532718375092372
+epoch: 63, loss: 0.059511472631129436
+epoch: 64, loss: 0.06259676848795996
+epoch: 65, loss: 0.05845037449450631
+epoch: 66, loss: 0.06029964783894164
+epoch: 67, loss: 0.05945554435311351
+epoch: 68, loss: 0.05835469159813199
+epoch: 69, loss: 0.060255502246686125
+epoch: 70, loss: 0.06047048534881989
+epoch: 71, loss: 0.05851942698687448
+epoch: 72, loss: 0.05747650687408168
+epoch: 73, loss: 0.0576407179947377
+epoch: 74, loss: 0.05713212284691898
+epoch: 75, loss: 0.05873232459167151
+epoch: 76, loss: 0.06371044660668954
+epoch: 77, loss: 0.05829644798775137
+epoch: 78, loss: 0.0553981977469188
+epoch: 79, loss: 0.05811875570465678
+epoch: 80, loss: 0.05639513822513566
+epoch: 81, loss: 0.055165266073475196
+epoch: 82, loss: 0.05590149781658381
+epoch: 83, loss: 0.059098960995990116
+epoch: 84, loss: 0.05523166661026023
+epoch: 85, loss: 0.05531477830663789
+epoch: 86, loss: 0.055127571455419196
+epoch: 87, loss: 0.055150510905410295
+epoch: 88, loss: 0.05432575133246636
+epoch: 89, loss: 0.055709463039030585
+epoch: 90, loss: 0.05492161596339429
+epoch: 91, loss: 0.054903224330960905
+epoch: 92, loss: 0.05631896798357567
+epoch: 93, loss: 0.054719038513472436
+epoch: 94, loss: 0.054189631160365286
+epoch: 95, loss: 0.05271816963587688
+epoch: 96, loss: 0.052662961478095634
+epoch: 97, loss: 0.05298795145894734
+epoch: 98, loss: 0.052771068984709145
+epoch: 99, loss: 0.05247464381890105
+epoch: 100, loss: 0.05662957521105584
+epoch: 101, loss: 0.052335864469309205
+epoch: 102, loss: 0.05032122628680164
+epoch: 103, loss: 0.052824929479226866
+epoch: 104, loss: 0.0521977953779112
+epoch: 105, loss: 0.051715503914497925
+epoch: 106, loss: 0.05044769944444332
+epoch: 107, loss: 0.05381418774569673
+epoch: 108, loss: 0.05227975661234398
+epoch: 109, loss: 0.05061252591882034
+epoch: 110, loss: 0.05017895377490537
+epoch: 111, loss: 0.05810498511501854
+epoch: 112, loss: 0.05312775267416977
+epoch: 113, loss: 0.054974182240714854
+epoch: 114, loss: 0.05090367690718267
+epoch: 115, loss: 0.04963013970076905
+epoch: 116, loss: 0.05025925344879007
+epoch: 117, loss: 0.04805815212603193
+epoch: 118, loss: 0.04893512928434315
+epoch: 119, loss: 0.05122639196010174
+epoch: 120, loss: 0.04966840883467479
+epoch: 121, loss: 0.04788484430797065
+epoch: 122, loss: 0.04699928602868957
+epoch: 123, loss: 0.04786243104483999
+epoch: 124, loss: 0.050583779953220595
+epoch: 125, loss: 0.0486268629236812
+epoch: 126, loss: 0.04704789686573869
+epoch: 127, loss: 0.04730843654293234
+epoch: 128, loss: 0.04701762757343074
+epoch: 129, loss: 0.04720695834631832
+epoch: 130, loss: 0.04702986536930049
+epoch: 131, loss: 0.04756295126363901
+epoch: 132, loss: 0.04640982367605569
+epoch: 133, loss: 0.04828351948734572
+epoch: 134, loss: 0.047849088435344
+epoch: 135, loss: 0.0560507072659675
+epoch: 136, loss: 0.05032313722559983
+epoch: 137, loss: 0.04775914310552513
+epoch: 138, loss: 0.045862557478748
+epoch: 139, loss: 0.04474910801634126
+epoch: 140, loss: 0.04454535203279063
+epoch: 141, loss: 0.04458037280710414
+epoch: 142, loss: 0.04611834266376848
+epoch: 143, loss: 0.04371415071571911
+epoch: 144, loss: 0.04299338511814962
+epoch: 145, loss: 0.04537392111212414
+epoch: 146, loss: 0.04452350400138779
+epoch: 147, loss: 0.04481899719394278
+epoch: 148, loss: 0.047996054241333956
+epoch: 149, loss: 0.04404429591107016
+epoch: 1, loss: 0.10269498460050394
+epoch: 2, loss: 0.07534602507358111
+epoch: 3, loss: 0.07265306740578736
+epoch: 1, loss: 0.2305356433581827
+epoch: 2, loss: 0.14335407228541694
+epoch: 3, loss: 0.1546920725543584
+epoch: 4, loss: 0.13161693826051696
+epoch: 5, loss: 0.11685069894883782
+epoch: 6, loss: 0.10998464607733435
+epoch: 7, loss: 0.10792559954903222
+epoch: 8, loss: 0.10286057479346969
+epoch: 9, loss: 0.10553758598065802
+epoch: 10, loss: 0.10064005766097191
+epoch: 1, loss: 3.833859447123749
+epoch: 2, loss: 3.8089949803959047
+epoch: 3, loss: 3.8695489584601352
+epoch: 4, loss: 3.879554175771773
+epoch: 5, loss: 3.834911823006613
+epoch: 6, loss: 3.821164131563689
+epoch: 7, loss: 3.841989567237241
+epoch: 8, loss: 3.864029660554869
+epoch: 9, loss: 3.810034586914948
+epoch: 10, loss: 3.8147163236779824
+epoch: 11, loss: 3.837061946945531
+epoch: 12, loss: 3.8422016126236747
+epoch: 13, loss: 3.844965345093182
+epoch: 14, loss: 3.831601028064532
+epoch: 15, loss: 3.8434024719255313
+epoch: 16, loss: 3.8644858055881093
+epoch: 17, loss: 3.8583159036934376
+epoch: 18, loss: 3.843317779313241
+epoch: 19, loss: 3.8084359746426344
+epoch: 20, loss: 3.8575190867164304
+epoch: 21, loss: 3.830255851149559
+epoch: 22, loss: 3.8329844291188886
+epoch: 23, loss: 3.826713530213705
+epoch: 24, loss: 3.824990052995937
+epoch: 25, loss: 3.8712623734027147
+epoch: 1, loss: 3.8412885928331915
+epoch: 1, loss: 0.19121466398806564
+************validation loss: 1.3870498774956692 ************
+epoch: 2, loss: 3.8068186899782805
+************validation loss: 4.385115558610243 ************
+epoch: 3, loss: 3.793598873824473
+************validation loss: 4.331198380273931 ************
+epoch: 4, loss: 3.7732859322468175
+************validation loss: 4.397925307645517 ************
+epoch: 1, loss: 0.18212605491650619
+epoch: 2, loss: 0.10969396841570439
+epoch: 1, loss: 0.19387522923285203
+epoch: 2, loss: 0.1284502438880158
+epoch: 3, loss: 0.10685066469877169
+epoch: 4, loss: 0.09544315742674155
+epoch: 5, loss: 0.10356261470472279
+epoch: 6, loss: 0.10040025680097721
+epoch: 7, loss: 0.0936480491169241
+epoch: 8, loss: 0.09097389478409132
+epoch: 9, loss: 0.08750017188699138
+epoch: 10, loss: 0.08271385940094016
+************validation loss: 0.6473330869887244 ************
+epoch: 11, loss: 0.09691331911499039
+epoch: 12, loss: 0.09815075112790461
+epoch: 13, loss: 0.08492511106247934
+epoch: 14, loss: 0.08745506183176444
+epoch: 15, loss: 0.08071694936023543
+epoch: 16, loss: 0.08048681422932358
+epoch: 17, loss: 0.08052071869151284
+epoch: 18, loss: 0.07753376021907227
+epoch: 19, loss: 0.07773374347247504
+epoch: 20, loss: 0.09181069632659093
+************validation loss: 0.8256183319232043 ************
+epoch: 21, loss: 0.07672585857359829
+epoch: 22, loss: 0.07430882417960771
+epoch: 23, loss: 0.07706389202742486
+epoch: 24, loss: 0.07710391689640846
+epoch: 25, loss: 0.07075452757690916
+epoch: 26, loss: 0.07611119962877144
+epoch: 1, loss: 0.09321438381216716
+epoch: 2, loss: 0.06234968607784998
+epoch: 3, loss: 0.05238361494340756
+epoch: 4, loss: 0.05692125320014471
+epoch: 5, loss: 0.05271712627113607
+epoch: 6, loss: 0.04699423941466988
+epoch: 7, loss: 0.0475314379535356
+epoch: 8, loss: 0.047964322654094865
+epoch: 9, loss: 0.04322211259966763
+epoch: 10, loss: 0.04247770274203166
+epoch: 1, loss: 0.19222449973250263
+epoch: 1, loss: 0.22548199787316536
+epoch: 1, loss: 0.1882301787814952
+epoch: 1, loss: 0.2130598399344067
+epoch: 1, loss: 0.19629803442377722
+
+epoch: 1, train loss: 0.20205106575732792
+epoch: 1, validation loss: 0.5617096999331432
+epoch: 2, train loss: 0.12796666753163796
+epoch: 2, validation loss: 0.550754951313138
+epoch: 3, train loss: 0.11747194702015412
+epoch: 3, validation loss: 0.5987505217028015
+epoch: 1, train loss: 0.20887555089464646
+epoch: 1, train loss: 0.1868125374755816
+epoch: 1, train loss: 0.21849376468962392
+epoch: 1, validation loss: 0.8546221915644822
+epoch: 2, train loss: 0.1382502442941267
+epoch: 2, validation loss: 0.46731382164956126
+epoch: 1, train loss: 0.15342261157868117
+epoch: 1, validation loss: 0.252913658656983
+epoch: 2, train loss: 0.06495097428127802
+epoch: 2, validation loss: 0.4069712038953506
+epoch: 3, train loss: 0.05449517846268109
+epoch: 3, validation loss: 0.7917105648265055
+epoch: 4, train loss: 0.049227711548457294
+epoch: 4, validation loss: 0.22345253489417322
+epoch: 5, train loss: 0.04586013526366915
+epoch: 5, validation loss: 0.3473889086824868
+epoch: 6, train loss: 0.05009312443064516
+epoch: 6, validation loss: 0.3937288040579428
+epoch: 7, train loss: 0.04610308163041005
+epoch: 7, validation loss: 0.4004033323358837
+epoch: 8, train loss: 0.043731188647152475
+epoch: 8, validation loss: 0.4352841839653009
+epoch: 9, train loss: 0.04848503610227337
+epoch: 9, validation loss: 0.25596751346967955
+epoch: 10, train loss: 0.04364706067118182
+epoch: 10, validation loss: 0.28383979356228367
+epoch: 11, train loss: 0.048385621287904766
+epoch: 11, validation loss: 0.32409730649114604
+epoch: 12, train loss: 0.04044750502570895
+epoch: 12, validation loss: 0.4665955218608502
+epoch: 13, train loss: 0.040778744689329446
+epoch: 13, validation loss: 0.5219077024590316
+epoch: 14, train loss: 0.03715084821362648
+epoch: 14, validation loss: 0.4362778837464759
+epoch: 15, train loss: 0.03857617152184495
+epoch: 15, validation loss: 0.32067666932396827
+epoch: 16, train loss: 0.04266230144520996
+epoch: 16, validation loss: 0.2498527229925738
+epoch: 17, train loss: 0.03752703125284333
+epoch: 17, validation loss: 0.21607565822984845
+epoch: 18, train loss: 0.037739351296034424
+epoch: 18, validation loss: 0.17867950725509704
+epoch: 19, train loss: 0.04055128798698064
+epoch: 19, validation loss: 0.18756122748748977
+epoch: 20, train loss: 0.03991780487687681
+epoch: 20, validation loss: 0.3624096876581757
+epoch: 21, train loss: 0.03664924560970384
+epoch: 21, validation loss: 0.3701736898475001
+epoch: 22, train loss: 0.03911333774242729
+epoch: 22, validation loss: 0.20412429541296898
+epoch: 23, train loss: 0.038350501753371305
+epoch: 23, validation loss: 0.23790310386060173
+epoch: 24, train loss: 0.037306191191188436
+epoch: 24, validation loss: 0.3692978185726635
+epoch: 25, train loss: 0.03701359436539917
+epoch: 25, validation loss: 0.35739519779460743
+epoch: 26, train loss: 0.0376882133866424
+epoch: 26, validation loss: 0.3273168604119772
+epoch: 27, train loss: 0.03598594606528136
+epoch: 27, validation loss: 0.3726258948259982
+epoch: 28, train loss: 0.03551259697422657
+epoch: 28, validation loss: 0.2799742506928186
+epoch: 29, train loss: 0.03512308241376286
+epoch: 29, validation loss: 0.3859425995894283
+epoch: 30, train loss: 0.03428216718884793
+epoch: 30, validation loss: 0.21527533735740145
+epoch: 31, train loss: 0.03539914595948573
+epoch: 31, validation loss: 0.288053566825485
+epoch: 32, train loss: 0.035625277008323825
+epoch: 32, validation loss: 0.32994752873050337
+epoch: 33, train loss: 0.03565759760455829
+epoch: 33, validation loss: 0.2945071905882254
+epoch: 34, train loss: 0.03409878669034807
+epoch: 34, validation loss: 0.1995608337245925
+epoch: 35, train loss: 0.035156507343115595
+epoch: 35, validation loss: 0.15300521565829814
+epoch: 36, train loss: 0.03228942603011852
+epoch: 36, validation loss: 0.3702866614898157
+epoch: 37, train loss: 0.03272498685906751
+epoch: 37, validation loss: 0.35633882680200474
+epoch: 38, train loss: 0.03545460055982246
+epoch: 38, validation loss: 0.2974633026951507
+epoch: 39, train loss: 0.03342734071291724
+epoch: 39, validation loss: 0.18537049721555776
+epoch: 40, train loss: 0.03594347549166845
+epoch: 40, validation loss: 0.16824161121235606
+epoch: 41, train loss: 0.034568499821619705
+epoch: 41, validation loss: 0.2982292691582372
+epoch: 42, train loss: 0.032879823843514545
+epoch: 42, validation loss: 0.3040178143280322
+epoch: 43, train loss: 0.03228616928851624
+epoch: 43, validation loss: 0.4374935476489328
+epoch: 44, train loss: 0.031949304794864866
+epoch: 44, validation loss: 0.46618117719184404
+epoch: 45, train loss: 0.031091954092654226
+epoch: 45, validation loss: 0.37698865971631473
+epoch: 46, train loss: 0.031013124961418347
+epoch: 46, validation loss: 0.30579974732761755
+epoch: 47, train loss: 0.03137877688142371
+epoch: 47, validation loss: 0.21985169668769955
+epoch: 48, train loss: 0.03179502599620898
+epoch: 48, validation loss: 0.3816974595197589
+epoch: 49, train loss: 0.03117911592527458
+epoch: 49, validation loss: 0.238502100985003
+epoch: 50, train loss: 0.03201437534480225
+epoch: 50, validation loss: 0.14105992130996972
+epoch: 51, train loss: 0.03158857821213517
+epoch: 51, validation loss: 0.2242960011170309
+epoch: 52, train loss: 0.03273909137187337
+epoch: 52, validation loss: 0.19240012038869791
+epoch: 53, train loss: 0.03111490964500317
+epoch: 53, validation loss: 0.25915824433566254
+epoch: 54, train loss: 0.030625092462601006
+epoch: 54, validation loss: 0.11818309003104198
+epoch: 55, train loss: 0.03128592893604813
+epoch: 55, validation loss: 0.2703099259396221
+epoch: 56, train loss: 0.031234144654810725
+epoch: 56, validation loss: 0.11616428537915151
+epoch: 57, train loss: 0.03008317116456443
+epoch: 57, validation loss: 0.11086097685002395
+epoch: 58, train loss: 0.030271541803710743
+epoch: 58, validation loss: 0.0851575638388421
+epoch: 59, train loss: 0.030490386023326696
+epoch: 59, validation loss: 0.5252589719778523
+epoch: 60, train loss: 0.030068542690527552
+epoch: 60, validation loss: 0.09248857812532787
+epoch: 61, train loss: 0.028972376103221037
+epoch: 61, validation loss: 0.11969744854809015
+epoch: 62, train loss: 0.030381275289946823
+epoch: 62, validation loss: 0.22998942026890085
+epoch: 63, train loss: 0.03102698925709596
+epoch: 63, validation loss: 0.1614842591598741
+epoch: 64, train loss: 0.029538501920116752
+epoch: 64, validation loss: 0.17757085572610026
+epoch: 65, train loss: 0.030667588945669715
+epoch: 65, validation loss: 0.29334499417560156
+epoch: 66, train loss: 0.02960558613116666
+epoch: 66, validation loss: 0.11642537516144848
+epoch: 67, train loss: 0.029150951780366464
+epoch: 67, validation loss: 0.16356287747127302
+epoch: 68, train loss: 0.029274304342575087
+epoch: 68, validation loss: 0.12418624128417342
+epoch: 69, train loss: 0.028492824845155005
+epoch: 69, validation loss: 0.11897221233797681
+epoch: 70, train loss: 0.03010663812961522
+epoch: 70, validation loss: 0.12761976325631166
+epoch: 71, train loss: 0.02984049348129735
+epoch: 71, validation loss: 0.17978970372661712
+epoch: 72, train loss: 0.028303803451695968
+epoch: 72, validation loss: 0.12197103358304767
+epoch: 73, train loss: 0.02795988987593805
+epoch: 73, validation loss: 0.19534546969717934
+epoch: 74, train loss: 0.028230236346677415
+epoch: 74, validation loss: 0.1671032023285616
+epoch: 75, train loss: 0.029631395492189953
+epoch: 75, validation loss: 0.2739431272001372
+epoch: 76, train loss: 0.028906878623740737
+epoch: 76, validation loss: 0.13965047636667072
+epoch: 77, train loss: 0.02794342780305045
+epoch: 77, validation loss: 0.17928235810775167
+epoch: 78, train loss: 0.02907703594716998
+epoch: 78, validation loss: 0.12012075880004917
+epoch: 79, train loss: 0.027762559636389437
+epoch: 79, validation loss: 0.11494269795989182
+epoch: 80, train loss: 0.027152482582376666
+epoch: 80, validation loss: 0.06164591416336633
+epoch: 81, train loss: 0.027177563644513167
+epoch: 81, validation loss: 0.06549541470919046
+epoch: 82, train loss: 0.02681483500899676
+epoch: 82, validation loss: 0.07223047754243882
+epoch: 83, train loss: 0.02696175429646457
+epoch: 83, validation loss: 0.10980280971148393
+epoch: 84, train loss: 0.027954491405171738
+epoch: 84, validation loss: 0.09991603113006596
+epoch: 85, train loss: 0.02813405623106567
+epoch: 85, validation loss: 0.17266562213321182
+epoch: 86, train loss: 0.027309558470154285
+epoch: 86, validation loss: 0.2535218122124882
+epoch: 87, train loss: 0.027072268415390704
+epoch: 87, validation loss: 0.21730981915911188
+epoch: 88, train loss: 0.027226690534242794
+epoch: 88, validation loss: 0.08437698271942586
+epoch: 89, train loss: 0.027090418690763056
+epoch: 89, validation loss: 0.3753673330221208
+epoch: 90, train loss: 0.02720364794879534
+epoch: 90, validation loss: 0.35294779764479073
+epoch: 91, train loss: 0.026939501155362422
+epoch: 91, validation loss: 0.1434209578285213
+epoch: 92, train loss: 0.026775071933358957
+epoch: 92, validation loss: 0.20893831115280112
+epoch: 93, train loss: 0.02682011981168839
+epoch: 93, validation loss: 0.10403826915169409
+epoch: 94, train loss: 0.026672458635244648
+epoch: 94, validation loss: 0.07728446880201029
+epoch: 95, train loss: 0.026718172229282793
+epoch: 95, validation loss: 0.15968439819416336
+epoch: 96, train loss: 0.026341904002623276
+epoch: 96, validation loss: 0.20912974751762933
+epoch: 97, train loss: 0.026264035314781775
+epoch: 97, validation loss: 0.1201797519574192
+epoch: 98, train loss: 0.02685374734617436
+epoch: 98, validation loss: 0.10106368623457689
+epoch: 99, train loss: 0.027842226762565512
+epoch: 99, validation loss: 0.08921787364541199
+epoch: 100, train loss: 0.025748353872361716
+epoch: 100, validation loss: 0.10779886343361961
+epoch: 101, train loss: 0.02644169708299968
+epoch: 101, validation loss: 0.0877248464139861
+epoch: 102, train loss: 0.025501956218764013
+epoch: 102, validation loss: 0.07003634675771962
+epoch: 103, train loss: 0.026155781222871856
+epoch: 103, validation loss: 0.07562879864574344
+epoch: 104, train loss: 0.025672923093568997
+epoch: 104, validation loss: 0.11736756575928621
+epoch: 105, train loss: 0.02546690621260387
+epoch: 105, validation loss: 0.20262641632685416
+epoch: 106, train loss: 0.025701363960583732
+epoch: 106, validation loss: 0.06818700837593829
+epoch: 107, train loss: 0.025789326648374595
+epoch: 107, validation loss: 0.08317479461193653
+epoch: 108, train loss: 0.02611708467722767
+epoch: 108, validation loss: 0.1251917769391071
+epoch: 109, train loss: 0.026501243392694402
+epoch: 109, validation loss: 0.08778237212436957
+epoch: 110, train loss: 0.02531810543788705
+epoch: 110, validation loss: 0.10054668928859493
+epoch: 111, train loss: 0.024888607575272396
+epoch: 111, validation loss: 0.10801528272053743
+epoch: 112, train loss: 0.02620187485019119
+epoch: 112, validation loss: 0.12138706258695826
+epoch: 113, train loss: 0.0249871244367558
+epoch: 113, validation loss: 0.18198644882145262
+epoch: 114, train loss: 0.024556622726558577
+epoch: 114, validation loss: 0.07384200163523838
+epoch: 115, train loss: 0.02434944908156262
+epoch: 115, validation loss: 0.08765291933211225
+epoch: 116, train loss: 0.02483840067608353
+epoch: 116, validation loss: 0.11893072324611129
+epoch: 117, train loss: 0.024641904646336144
+epoch: 117, validation loss: 0.05588303009051193
+epoch: 1, train loss: 0.09529389689366023
+epoch: 1, validation loss: 0.2844999801694951
+epoch: 2, train loss: 0.06557435753939064
+epoch: 2, validation loss: 0.3932613384930006
+epoch: 3, train loss: 0.05805332581535797
+epoch: 3, validation loss: 0.6284071149715341
+epoch: 4, train loss: 0.058462559691882056
+epoch: 4, validation loss: 0.3021392643136616
+epoch: 5, train loss: 0.048797924292411275
+epoch: 5, validation loss: 0.40816818422577644
+epoch: 6, train loss: 0.04770844867591983
+epoch: 6, validation loss: 0.20731767181347233
+epoch: 7, train loss: 0.04405297781919958
+epoch: 7, validation loss: 0.649509769382502
+epoch: 8, train loss: 0.044831075492449364
+epoch: 8, validation loss: 0.32797437508406724
+epoch: 9, train loss: 0.04113999592483192
+epoch: 9, validation loss: 0.1749429795412257
+epoch: 10, train loss: 0.04712491993410868
+epoch: 10, validation loss: 0.2797752072444652
+epoch: 11, train loss: 0.041947691857345266
+epoch: 11, validation loss: 0.4333267102031899
+epoch: 12, train loss: 0.04127613308640262
+epoch: 12, validation loss: 0.2997175830340702
+epoch: 13, train loss: 0.044952700013421464
+epoch: 13, validation loss: 0.4490772821097967
+epoch: 14, train loss: 0.04042909148644971
+epoch: 14, validation loss: 0.4733680330423845
+epoch: 15, train loss: 0.03930758024684801
+epoch: 15, validation loss: 0.17911643194340504
+epoch: 16, train loss: 0.04076404351382756
+epoch: 16, validation loss: 0.4001676998291146
+epoch: 17, train loss: 0.0380073367312217
+epoch: 17, validation loss: 0.4001766174296489
+epoch: 18, train loss: 0.04187271553887113
+epoch: 18, validation loss: 0.24770138153347232
+epoch: 19, train loss: 0.04016702288258234
+epoch: 19, validation loss: 0.3856220697338506
+epoch: 20, train loss: 0.03867540838255564
+epoch: 20, validation loss: 0.2148173825767441
+epoch: 21, train loss: 0.03611783737820229
+epoch: 21, validation loss: 0.38397253527897557
+epoch: 22, train loss: 0.037586586159124205
+epoch: 22, validation loss: 0.2701928821368418
+epoch: 23, train loss: 0.037133497267090414
+epoch: 23, validation loss: 0.31632472200482886
+epoch: 24, train loss: 0.03969417429014818
+epoch: 24, validation loss: 0.30682434666141944
+epoch: 25, train loss: 0.03903365505482402
+epoch: 25, validation loss: 0.31621514998799555
+epoch: 26, train loss: 0.03885912436182622
+epoch: 26, validation loss: 0.3960112529037641
+epoch: 27, train loss: 0.036774569533141344
+epoch: 27, validation loss: 0.3228857638183085
+epoch: 28, train loss: 0.03763576337270698
+epoch: 28, validation loss: 0.2005532043545845
+epoch: 29, train loss: 0.03856056278716668
+epoch: 29, validation loss: 0.2455417462462439
+epoch: 30, train loss: 0.03725063329435897
+epoch: 30, validation loss: 0.2975235486273371
+epoch: 31, train loss: 0.03437154024768355
+epoch: 31, validation loss: 0.388699371874283
+epoch: 32, train loss: 0.03436184252626193
+epoch: 32, validation loss: 0.2923315151858686
+epoch: 33, train loss: 0.03363376923961871
+epoch: 33, validation loss: 0.19660789521170122
+epoch: 34, train loss: 0.0341022362025952
+epoch: 34, validation loss: 0.23907857006307612
+epoch: 35, train loss: 0.035320345353285716
+epoch: 35, validation loss: 0.21745029436505459
+epoch: 36, train loss: 0.03596033963682146
+epoch: 36, validation loss: 0.34993106249093614
+epoch: 37, train loss: 0.03575627592193028
+epoch: 37, validation loss: 0.24969498815777932
+epoch: 38, train loss: 0.035085569700352835
+epoch: 38, validation loss: 0.3067139694791528
+epoch: 39, train loss: 0.033702192999496686
+epoch: 39, validation loss: 0.3294010702136419
+epoch: 40, train loss: 0.03318405434432104
+epoch: 40, validation loss: 0.24079494882964994
+epoch: 41, train loss: 0.03447525399531644
+epoch: 41, validation loss: 0.3364910170842104
+epoch: 42, train loss: 0.033865962708816796
+epoch: 42, validation loss: 0.18954484513690495
+epoch: 43, train loss: 0.03432570038993486
+epoch: 43, validation loss: 0.19845970793106713
+epoch: 44, train loss: 0.03499133750305173
+epoch: 44, validation loss: 0.21323579139324061
+epoch: 45, train loss: 0.032537175564073754
+epoch: 45, validation loss: 0.3502778257521342
+epoch: 46, train loss: 0.03303741758834466
+epoch: 46, validation loss: 0.39820687257210613
+epoch: 47, train loss: 0.03244459364334643
+epoch: 47, validation loss: 0.321812608356898
+epoch: 48, train loss: 0.033049960324933035
+epoch: 48, validation loss: 0.3005539426938391
+epoch: 49, train loss: 0.036082664356377
+epoch: 49, validation loss: 0.29369429657915314
+epoch: 50, train loss: 0.03290128432041278
+epoch: 50, validation loss: 0.3175012111720964
+epoch: 51, train loss: 0.03254960758370621
+epoch: 51, validation loss: 0.41871821042266094
+epoch: 52, train loss: 0.03149252529850671
+epoch: 52, validation loss: 0.15011361139404833
+epoch: 53, train loss: 0.030899534408917424
+epoch: 53, validation loss: 0.2684808637449521
+epoch: 54, train loss: 0.0321715332808631
+epoch: 54, validation loss: 0.24331971159850435
+epoch: 55, train loss: 0.03073596824454777
+epoch: 55, validation loss: 0.14422678528276348
+epoch: 56, train loss: 0.03299653968830928
+epoch: 56, validation loss: 0.14472772873965883
+epoch: 57, train loss: 0.03312548575922847
+epoch: 57, validation loss: 0.252668002673624
+epoch: 58, train loss: 0.03128221570660868
+epoch: 58, validation loss: 0.18295820399581733
+epoch: 59, train loss: 0.03113933234007575
+epoch: 59, validation loss: 0.12773261056243015
+epoch: 60, train loss: 0.03065649370367872
+epoch: 60, validation loss: 0.16983915421768875
+epoch: 61, train loss: 0.030612031353489305
+epoch: 61, validation loss: 0.2356756102188705
+epoch: 62, train loss: 0.030221523547925018
+epoch: 62, validation loss: 0.24393225193045304
+epoch: 63, train loss: 0.03190854826793816
+epoch: 63, validation loss: 0.3368531450185968
+epoch: 64, train loss: 0.031542967402594005
+epoch: 64, validation loss: 0.24679608384894816
+epoch: 65, train loss: 0.029698381637135028
+epoch: 65, validation loss: 0.23740206122094112
+epoch: 66, train loss: 0.03041947182155157
+epoch: 66, validation loss: 0.4101078909903666
+epoch: 67, train loss: 0.03003445271538512
+epoch: 67, validation loss: 0.2795923488217701
+epoch: 68, train loss: 0.02953873508359625
+epoch: 68, validation loss: 0.49405135245681747
+epoch: 69, train loss: 0.030300885713450722
+epoch: 69, validation loss: 0.4164052240389892
+epoch: 70, train loss: 0.030962463688401887
+epoch: 70, validation loss: 0.2026763505454501
+epoch: 71, train loss: 0.03198701914810694
+epoch: 71, validation loss: 0.10629798218980123
+epoch: 72, train loss: 0.029068417575713833
+epoch: 72, validation loss: 0.16002834952246417
+epoch: 73, train loss: 0.02972019205308499
+epoch: 73, validation loss: 0.11975736739492325
+epoch: 74, train loss: 0.029447887695176686
+epoch: 74, validation loss: 0.22394324755404224
+epoch: 75, train loss: 0.029339358599773095
+epoch: 75, validation loss: 0.161166597414873
+epoch: 76, train loss: 0.0307888017440675
+epoch: 76, validation loss: 0.1312189683655318
+epoch: 77, train loss: 0.029843988227557582
+epoch: 77, validation loss: 0.2000070559216129
+epoch: 78, train loss: 0.02958434541241743
+epoch: 78, validation loss: 0.11967188095731644
+epoch: 79, train loss: 0.02960502158867421
+epoch: 79, validation loss: 0.2064477058469625
+epoch: 80, train loss: 0.029058378645038203
+epoch: 80, validation loss: 0.23163232443140663
+epoch: 81, train loss: 0.02963346596822686
+epoch: 81, validation loss: 0.21266517896053827
+epoch: 82, train loss: 0.028724823201501472
+epoch: 82, validation loss: 0.11018254377479182
+epoch: 83, train loss: 0.028758037358114674
+epoch: 83, validation loss: 0.12097828981936114
+epoch: 84, train loss: 0.029081097024046564
+epoch: 84, validation loss: 0.434048073099089
+epoch: 85, train loss: 0.02820661912361781
+epoch: 85, validation loss: 0.09779894493897114
+epoch: 86, train loss: 0.03000439918610834
+epoch: 86, validation loss: 0.12225686979511363
+epoch: 87, train loss: 0.029175155785299257
+epoch: 87, validation loss: 0.12959166401672867
+epoch: 88, train loss: 0.028811498062845758
+epoch: 88, validation loss: 0.12763463715102932
+epoch: 89, train loss: 0.02798750244233924
+epoch: 89, validation loss: 0.23258909639851444
+epoch: 90, train loss: 0.02797311472368255
+epoch: 90, validation loss: 0.21087284558444944
+epoch: 91, train loss: 0.028871635141107525
+epoch: 91, validation loss: 0.15871338819572162
+epoch: 92, train loss: 0.029323410176769343
+epoch: 92, validation loss: 0.11821531213219177
+epoch: 93, train loss: 0.027786158572011325
+epoch: 93, validation loss: 0.28881093735650654
+epoch: 94, train loss: 0.02791293725528898
+epoch: 94, validation loss: 0.19928583266463742
+epoch: 95, train loss: 0.02867053762490662
+epoch: 95, validation loss: 0.2527333936421587
+epoch: 96, train loss: 0.028053446013749164
+epoch: 96, validation loss: 0.12287159649667578
+epoch: 97, train loss: 0.02786886386625827
+epoch: 97, validation loss: 0.1759246313237086
+epoch: 98, train loss: 0.027740648141822734
+epoch: 98, validation loss: 0.21655193691846186
+epoch: 99, train loss: 0.02771176411314662
+epoch: 99, validation loss: 0.30468349764818575
+epoch: 100, train loss: 0.028310298995357346
+epoch: 100, validation loss: 0.38593841377401705
+epoch: 101, train loss: 0.02751547812173764
+epoch: 101, validation loss: 0.1695627727056197
+epoch: 102, train loss: 0.027654970974459084
+epoch: 102, validation loss: 0.2139949450716469
+epoch: 103, train loss: 0.0281732238691677
+epoch: 103, validation loss: 0.08581540375256025
+epoch: 104, train loss: 0.02723808773016406
+epoch: 104, validation loss: 0.17661171246808066
+epoch: 105, train loss: 0.027116082276636193
+epoch: 105, validation loss: 0.11629868837638725
+epoch: 106, train loss: 0.027833153635794746
+epoch: 106, validation loss: 0.16121047447361422
+epoch: 107, train loss: 0.02699318940127284
+epoch: 107, validation loss: 0.14103177586758808
+epoch: 108, train loss: 0.02915402999144684
+epoch: 108, validation loss: 0.3362813422867216
+epoch: 109, train loss: 0.02802640599720674
+epoch: 109, validation loss: 0.19015899803690228
+epoch: 110, train loss: 0.027036491423925606
+epoch: 110, validation loss: 0.1649197424085468
+epoch: 111, train loss: 0.02709370824024946
+epoch: 111, validation loss: 0.27988163259337545
+epoch: 112, train loss: 0.027249955693815848
+epoch: 112, validation loss: 0.1164804960011812
+epoch: 113, train loss: 0.027812531196116895
+epoch: 113, validation loss: 0.3677659865598477
+epoch: 114, train loss: 0.027497397395156657
+epoch: 114, validation loss: 0.15485762080577686
+epoch: 115, train loss: 0.026687585555864916
+epoch: 115, validation loss: 0.2336979866403141
+epoch: 116, train loss: 0.027634855891094476
+epoch: 116, validation loss: 0.14210059616566445
+epoch: 117, train loss: 0.027372987479879637
+epoch: 117, validation loss: 0.29643356116105546
+epoch: 118, train loss: 0.027382791586757743
+epoch: 118, validation loss: 0.26219313919457726
+epoch: 119, validation loss: 0.11948741111783913
+epoch: 120, train loss: 0.026580708891394276
+epoch: 120, validation loss: 0.13520258853859138
+epoch: 121, train loss: 0.026511361372269455
+epoch: 121, validation loss: 0.12160913838277483
+epoch: 1, train loss: 0.41001184830815834
+epoch: 1, train loss: 0.9057418211775633
+epoch: 1, validation loss: 0.8445798309881296
+epoch: 2, train loss: 0.9054059876533685
+epoch: 2, validation loss: 0.8516652842066181
+epoch: 3, train loss: 0.905147242407696
+epoch: 3, validation loss: 0.8606039801640297
+epoch: 4, train loss: 0.9052700771028129
+epoch: 4, validation loss: 0.8265534470330423
+epoch: 5, train loss: 0.9054773727657388
+epoch: 5, validation loss: 0.8448750314427845
+epoch: 6, train loss: 0.9050400031739799
+epoch: 6, validation loss: 0.8268869110007784
+epoch: 1, train loss: 1.0589862084309656
+epoch: 1, train loss: 0.9392160720888457
+epoch: 1, train loss: 0.694638566788947
+epoch: 1, train loss: 0.9886581821623529
+epoch: 1, validation loss: 0.9038218375462205
+epoch: 2, train loss: 0.9891253851144073
+epoch: 2, validation loss: 0.8344640180246153
+epoch: 3, train loss: 0.98875360445399
+epoch: 3, validation loss: 0.89729440923947
+epoch: 1, loss: 0.13305042838835301
+************validation loss: 1.4166935449049098 ************
+epoch: 2, loss: 0.08008577771852439
+************validation loss: 2.2408165224730525 ************
+epoch: 3, loss: 0.08185670058479283
+************validation loss: 2.281822579231725 ************
+epoch: 4, loss: 0.08313467157124287
+************validation loss: 2.0635062602362524 ************
+epoch: 5, loss: 0.0754461249909603
+************validation loss: 1.5677086173264838 ************
+epoch: 6, loss: 0.07317785575760415
+************validation loss: 1.2018182379985922 ************
+epoch: 7, loss: 0.07329886297542434
+************validation loss: 2.132488179006683 ************
+epoch: 8, loss: 0.07144037353270262
+************validation loss: 1.7884713767179803 ************
+epoch: 9, loss: 0.07311805502000338
+************validation loss: 2.67014864485697 ************
+epoch: 10, loss: 0.07252184090020744
+************validation loss: 1.6939335238855722 ************
+epoch: 11, loss: 0.06703444035410276
+************validation loss: 1.6237176931671686 ************
+epoch: 12, loss: 0.06755048974867367
+************validation loss: 1.1661121201937767 ************
+epoch: 13, loss: 0.06664475982902172
+************validation loss: 1.4770932224537454 ************
+epoch: 14, loss: 0.06839789271472056
+************validation loss: 1.2924365020954787 ************
+epoch: 15, loss: 0.06382333844414392
+************validation loss: 1.8623545127573298 ************
+epoch: 16, loss: 0.06268470770093283
+************validation loss: 1.3209198822281254 ************
+epoch: 17, loss: 0.06706179241622005
+************validation loss: 1.6766496118324905 ************
+epoch: 18, loss: 0.06527193812275024
+************validation loss: 1.3732322148436598 ************
+epoch: 19, loss: 0.06245232260613015
+************validation loss: 1.4932095568571517 ************
+epoch: 20, loss: 0.06363547722358028
+************validation loss: 1.668658289502361 ************
+epoch: 21, loss: 0.060792845056066365
+************validation loss: 1.5300995541889388 ************
+epoch: 22, loss: 0.05953278773036441
+************validation loss: 1.3093902639933486 ************
+epoch: 23, loss: 0.06458083083806791
+************validation loss: 1.6928013696599362 ************
+epoch: 24, loss: 0.06119036245326609
+************validation loss: 1.735180609817825 ************
+epoch: 25, loss: 0.05862635151567293
+************validation loss: 1.9276111648876721 ************
+epoch: 26, loss: 0.0614466181402921
+************validation loss: 1.5231131989397664 ************
+epoch: 27, loss: 0.05866388529002401
+************validation loss: 1.606903702882466 ************
+epoch: 28, loss: 0.05965018829204927
+************validation loss: 1.4216250650195488 ************
+epoch: 29, loss: 0.05742268323119124
+************validation loss: 1.3542009631255225 ************
+epoch: 30, loss: 0.05785957814632895
+************validation loss: 1.3651386645080439 ************
+epoch: 31, loss: 0.058347659882090085
+************validation loss: 1.126496968512882 ************
+epoch: 32, loss: 0.05561295913120772
+************validation loss: 1.243410148268649 ************
+epoch: 33, loss: 0.055531152017463996
+************validation loss: 1.55715198901051 ************
+epoch: 34, loss: 0.054707383526532385
+************validation loss: 1.1410886303368788 ************
+epoch: 35, loss: 0.055814145819228424
+************validation loss: 1.79121805321592 ************
+epoch: 36, loss: 0.05615793386818671
+************validation loss: 1.5100094367152275 ************
+epoch: 37, loss: 0.05416403463474053
+************validation loss: 1.0418665162774163 ************
+epoch: 38, loss: 0.056840621218954834
+************validation loss: 1.2640978315733928 ************
+epoch: 39, loss: 0.053800064237528845
+************validation loss: 1.2700439548092102 ************
+epoch: 40, loss: 0.05462825995044409
+************validation loss: 1.1823576707670937 ************
+epoch: 41, loss: 0.05245333138307337
+************validation loss: 1.2467971514187641 ************
+epoch: 42, loss: 0.05360058362676436
+************validation loss: 1.2590072716572391 ************
+epoch: 43, loss: 0.052577942597913783
+************validation loss: 1.4676514752487193 ************
+epoch: 44, loss: 0.05196122315447394
+************validation loss: 1.3978064523370408 ************
