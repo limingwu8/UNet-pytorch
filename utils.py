@@ -58,18 +58,18 @@ class Option(Config):
     name = "DSB2018"
 
     # root dir of training and validation set
-    root_dir = '/home/liming/Documents/dataset/dataScienceBowl2018/combined'
+    root_dir = '/home/PNW/wu1114/Documents/dataset/dataScienceBowl2018/combined'
 
     # root dir of testing set
-    test_dir = '/home/liming/Documents/dataset/dataScienceBowl2018/testing_data'
+    test_dir = '/home/PNW/wu1114/Documents/dataset/dataScienceBowl2018/testing_data'
 
     # save segmenting results (prediction masks) to this folder
-    results_dir = '/home/liming/Documents/dataset/dataScienceBowl2018/results'
+    results_dir = '/home/PNW/wu1114/Documents/dataset/dataScienceBowl2018/results'
 
     num_workers = 1     	# number of threads for data loading
     shuffle = True      	# shuffle the data set
-    batch_size = 2     		# GTX1060 3G Memory
-    epochs = 150			# number of epochs to train
+    batch_size = 32     		# GTX1060 3G Memory
+    epochs = 200			# number of epochs to train
     is_train = False     	# True for training, False for making prediction
     save_model = True   	# True for saving the model, False for not saving the model
 
@@ -183,8 +183,7 @@ def encode_and_save(preds_test_upsampled, test_ids):
         if not os.path.exists(path):
             os.mkdir(path)
         # Image.fromarray(preds_test_upsampled[i]).save(os.path.join(path,'prediction.png'))
-        # plt.imsave(os.path.join(path, 'prediction.png'),preds_test_upsampled[i])
-        io.imsave(os.path.join(path, 'prediction.png'),preds_test_upsampled[i])
+        plt.imsave(os.path.join(path, 'prediction.png'),preds_test_upsampled[i], cmap='gray')
     # save as encoding
     new_test_ids = []
     rles = []
