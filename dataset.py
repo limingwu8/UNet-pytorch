@@ -33,7 +33,7 @@ class Rescale(object):
 
     def __call__(self, sample):
         if self.train:
-            image, mask, img_id = sample['image'], sample['mask'], sample['img_id']
+            image, mask, img_id, height, width = sample['image'], sample['mask'], sample['img_id'], sample['height'],sample['width']
 
             if isinstance(self.output_size, int):
                 new_h = new_w = self.output_size
@@ -46,7 +46,7 @@ class Rescale(object):
             # preserve_range means not normalize the image when resize
             img = transform.resize(image, (new_h, new_w), preserve_range=True, mode='constant')
             mask = transform.resize(mask, (new_h, new_w), preserve_range=True, mode='constant')
-            return {'image': img, 'mask': mask, 'img_id': img_id}
+            return {'image': img, 'mask': mask, 'img_id': img_id, 'height':height, 'width':width}
         else:
             image, img_id, height,width = sample['image'], sample['img_id'], sample['height'],sample['width']
             if isinstance(self.output_size, int):
@@ -78,7 +78,8 @@ class RandomCrop(object):
             self.output_size = output_size
 
     def __call__(self, sample):
-        image, mask, img_id = sample['image'], sample['mask'], sample['img_id']
+        image, mask, img_id, height, width = sample['image'], sample['mask'], sample['img_id'], sample['height'], \
+                                             sample['width']
 
         h, w = image.shape[:2]
         new_h, new_w = self.output_size
@@ -96,7 +97,7 @@ class RandomCrop(object):
         mask = mask[top: top + new_h,
                 left: left + new_w]
 
-        return {'image': image, 'mask': mask, 'img_id':img_id}
+        return {'image': image, 'mask': mask, 'img_id':img_id, 'height':height, 'width':width}
 
 
 class ToTensor(object):
@@ -107,7 +108,7 @@ class ToTensor(object):
     def __call__(self, sample):
         if self.train:
             # if sample.keys
-            image, mask, img_id = sample['image'], sample['mask'], sample['img_id']
+            image, mask, img_id, height, width = sample['image'], sample['mask'], sample['img_id'], sample['height'],sample['width']
 
             # swap color axis because
             # numpy image: H x W x C
@@ -116,7 +117,9 @@ class ToTensor(object):
             mask = mask.transpose((2, 0, 1))
             return {'image': torch.from_numpy(image.astype(np.uint8)),
                     'mask': torch.from_numpy(mask.astype(np.uint8)),
-                    'img_id': img_id}
+                    'img_id': img_id,
+                    'height':height,
+                    'width':width}
         else:
             image, height, width, img_id = sample['image'], sample['height'],sample['width'], sample['img_id']
             image = image.transpose((2, 0, 1))
@@ -166,7 +169,7 @@ class DSB2018Dataset(Dataset):
             img = io.imread(img_dir).astype(np.uint8)
             mask = io.imread(mask_dir, as_grey=True).astype(np.bool)
             mask = np.expand_dims(mask, axis=-1)
-            sample = {'image':img, 'mask':mask, 'img_id':self.img_id[idx]}
+            sample = {'image':img, 'mask':mask, 'img_id':self.img_id[idx], "height":img.shape[0], "width":img.shape[1]}
 
         else:
             img_dir = os.path.join(self.root_dir, self.img_id[idx], 'image.png')
@@ -263,20 +266,20 @@ def get_test_loader(root_dir, batch_size=16, shuffle=False, num_workers=4, pin_m
 
 if __name__ == '__main__':
     opt = Option()
-    # trainloader, val_loader = get_train_valid_loader(opt.root_dir, batch_size=opt.batch_size,
-    #                                                     split=True, shuffle=opt.shuffle,
-    #                                                     num_workers=opt.num_workers,
-    #                                                     val_ratio=0.1, pin_memory=opt.pin_memory)
-    #
-    # for i_batch, sample_batched in enumerate(val_loader):
-    #     print(i_batch, sample_batched['image'].size(), sample_batched['mask'].size())
-    #     show_batch(sample_batched)
-    #     plt.show()
+    trainloader, val_loader = get_train_valid_loader(opt.root_dir, batch_size=opt.batch_size,
+                                                        split=True, shuffle=opt.shuffle,
+                                                        num_workers=opt.num_workers,
+                                                        val_ratio=0.1, pin_memory=opt.pin_memory)
 
-    testloader = get_test_loader(opt.test_dir, batch_size=opt.batch_size,shuffle=opt.shuffle,
-                                    num_workers=opt.num_workers, pin_memory=opt.pin_memory)
-
-    for i_batch, sample_batched in enumerate(testloader):
-        # print(i_batch, sample_batched['image'].size(), sample_batched['img_size'])
-        plt.imshow(np.squeeze(sample_batched['image'][0].cpu().numpy().transpose((1, 2, 0))))
+    for i_batch, sample_batched in enumerate(val_loader):
+        print(i_batch, sample_batched['image'].size(), sample_batched['mask'].size())
+        show_batch(sample_batched)
         plt.show()
+
+    # testloader = get_test_loader(opt.test_dir, batch_size=opt.batch_size,shuffle=opt.shuffle,
+    #                                 num_workers=opt.num_workers, pin_memory=opt.pin_memory)
+    #
+    # for i_batch, sample_batched in enumerate(testloader):
+    #     # print(i_batch, sample_batched['image'].size(), sample_batched['img_size'])
+    #     plt.imshow(np.squeeze(sample_batched['image'][0].cpu().numpy().transpose((1, 2, 0))))
+    #     plt.show()
