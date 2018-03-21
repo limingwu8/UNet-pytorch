@@ -10,7 +10,7 @@ import torch.optim as optim
 from torch.autograd import Variable
 from dataset import get_train_valid_loader, get_test_loader
 from model import UNet2
-from utils import Option, encode_and_save
+from utils import Option, encode_and_save, compute_iou
 from skimage import io
 from skimage.transform import resize
 import matplotlib.pyplot as plt
@@ -111,16 +111,16 @@ if __name__ == '__main__':
     model = UNet2(input_channels=3, nclasses=1)
     if opt.is_train:
         # split all data to train and validation, set split = True
-        # train_loader, val_loader = get_train_valid_loader(opt.root_dir, batch_size=opt.batch_size,
-        #                                       split=True, shuffle=opt.shuffle,
-        #                                       num_workers=opt.num_workers,
-        #                                       val_ratio=0.1, pin_memory=opt.pin_memory)
-
-        # load all data for training
-        train_loader = get_train_valid_loader(opt.root_dir, batch_size=opt.batch_size,
-                                              split=False, shuffle=opt.shuffle,
+        train_loader, val_loader = get_train_valid_loader(opt.root_dir, batch_size=opt.batch_size,
+                                              split=True, shuffle=opt.shuffle,
                                               num_workers=opt.num_workers,
                                               val_ratio=0.1, pin_memory=opt.pin_memory)
+
+        # load all data for training
+        # train_loader = get_train_valid_loader(opt.root_dir, batch_size=opt.batch_size,
+        #                                       split=False, shuffle=opt.shuffle,
+        #                                       num_workers=opt.num_workers,
+        #                                       val_ratio=0.1, pin_memory=opt.pin_memory)
         if opt.n_gpu > 1:
             model = nn.DataParallel(model)
         if opt.is_cuda:
@@ -129,6 +129,10 @@ if __name__ == '__main__':
         criterion = nn.BCELoss().cuda()
         # start to run a training
         run_train(model, train_loader, opt, criterion)
+        # make prediction on validation set
+        predictions, img_ids = run_test(model, val_loader, opt)
+        # compute IOU between prediction and ground truth masks
+        compute_iou(predictions, img_ids, val_loader)
         # SAVE model
         if opt.save_model:
             torch.save(model.state_dict(), os.path.join(opt.checkpoint_dir, 'model-01.pt'))
@@ -142,8 +146,6 @@ if __name__ == '__main__':
             model = nn.DataParallel(model)
         if opt.is_cuda:
             model = model.cuda()
-
         predictions, img_ids = run_test(model, test_loader, opt)
+        # run length encoding and save as csv
         encode_and_save(predictions, img_ids)
-
-

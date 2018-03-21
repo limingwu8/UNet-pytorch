@@ -58,20 +58,20 @@ class Option(Config):
     name = "DSB2018"
 
     # root dir of training and validation set
-    root_dir = '/home/PNW/wu1114/Documents/dataset/dataScienceBowl2018/combined'
+    root_dir = '/home/liming/Documents/dataset/dataScienceBowl2018/combined'
 
     # root dir of testing set
-    test_dir = '/home/PNW/wu1114/Documents/dataset/dataScienceBowl2018/testing_data'
+    test_dir = '/home/liming/Documents/dataset/dataScienceBowl2018/testing_data'
 
     # save segmenting results (prediction masks) to this folder
-    results_dir = '/home/PNW/wu1114/Documents/dataset/dataScienceBowl2018/results'
+    results_dir = '/home/liming/Documents/dataset/dataScienceBowl2018/results'
 
     num_workers = 1     	# number of threads for data loading
     shuffle = True      	# shuffle the data set
-    batch_size = 32     		# GTX1060 3G Memory
-    epochs = 200			# number of epochs to train
-    is_train = False     	# True for training, False for making prediction
-    save_model = True   	# True for saving the model, False for not saving the model
+    batch_size = 16     		# GTX1060 3G Memory
+    epochs = 2			# number of epochs to train
+    is_train = True     	# True for training, False for making prediction
+    save_model = False   	# True for saving the model, False for not saving the model
 
     n_gpu = 1				# number of GPUs
 
@@ -152,6 +152,27 @@ class Utils(object):
             img.save(os.path.join(dest, 'image.png'))
 
         print('reading testing data done...')
+
+
+def compute_iou(predictions, img_ids, val_loader):
+    """
+    compute IOU between two combined masks, this does not follow kaggle's evaluation
+    :return: IOU, between 0 and 1
+    """
+    ious = []
+    for i in range(0, len(img_ids)):
+        pred = predictions[i]
+        img_id = img_ids[i]
+        mask_path = os.path.join(Option.root_dir, img_id, 'mask.png')
+        mask = np.asarray(Image.open(mask_path).convert('L'), dtype=np.bool)
+        union = np.sum(np.logical_or(mask, pred))
+        intersection = np.sum(np.logical_and(mask, pred))
+        iou = intersection/union
+        ious.append(iou)
+    df = pd.DataFrame({'img_id':img_ids,'iou':ious})
+    df.to_csv('IOU.csv', index=False)
+
+
 
 # Run-length encoding stolen from https://www.kaggle.com/rakhlin/fast-run-length-encoding-python
 def rle_encoding(x):
