@@ -1372,3 +1372,27 @@ epoch: 196, train loss: 0.055148212505238395
 epoch: 197, train loss: 0.05143432940045992
 epoch: 198, train loss: 0.04949059337377548
 epoch: 199, train loss: 0.04817831037299974
+epoch: 1, train loss: 
+ 0.2938
+[torch.cuda.FloatTensor of size () (GPU 0)]
+
+epoch: 1, train loss: 
+ 0.2868
+[torch.cuda.FloatTensor of size () (GPU 0)]
+
+epoch: 1, train loss: 
+ 0.2903
+[torch.cuda.FloatTensor of size () (GPU 0)]
+
+epoch: 1, train loss: 
+ 0.4778
+[torch.cuda.FloatTensor of size () (GPU 0)]
+
+epoch: 1, train loss: 
+ 0.3351
+[torch.cuda.FloatTensor of size () (GPU 0)]
+
+epoch: 1, train loss: 
+ 0.3206
+[torch.cuda.FloatTensor of size () (GPU 0)]
+
