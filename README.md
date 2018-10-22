@@ -27,9 +27,11 @@ This is the code for kaggle 2018 data science bowl nuclei segmentation (https://
 5. When making prediction using testing data, set train=False in utils.py, and run script train.py again. The prediction masks will be saved to the folder specified in Option class under utils.py, and the run-length-encoding csv file will be saved in current folder.
 
 ## Training results
+### U-Net Architecture
+![image1](https://github.com/limingwu8/UNet-pytorch/blob/master/images/model.png)
 
 ### Some examples of prediction masks
-![image1](https://github.com/limingwu8/UNet-pytorch/blob/master/images/prediction_results01.png)
+![image2](https://github.com/limingwu8/UNet-pytorch/blob/master/images/prediction_results01.png)
 
 ### Evaluation
-![image2](https://github.com/limingwu8/UNet-pytorch/blob/master/images/loss.png)
+![image3](https://github.com/limingwu8/UNet-pytorch/blob/master/images/loss.png)
