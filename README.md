@@ -28,8 +28,8 @@ This is the code for kaggle 2018 data science bowl nuclei segmentation (https://
 
 ## Training results
 
-### One example of prediction masks
+### Some examples of prediction masks
 ![image1](https://github.com/limingwu8/UNet-pytorch/blob/master/images/prediction_results01.png)
 
-### Training loss
+### Evaluation
 ![image2](https://github.com/limingwu8/UNet-pytorch/blob/master/images/loss.png)
