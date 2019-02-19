@@ -14,6 +14,7 @@ import torch
 from skimage.morphology import label
 import pandas as pd
 import matplotlib.pylab as plt
+import cv2
 
 
 # Base Configuration class
@@ -58,22 +59,28 @@ class Option(Config):
     name = "DSB2018"
 
     # root dir of training and validation set
-    root_dir = '/home/liming/Documents/dataset/dataScienceBowl2018/combined'
+    root_dir = '/datasets/dsb2018_nuclei/combined'
 
     # root dir of testing set
-    test_dir = '/home/liming/Documents/dataset/dataScienceBowl2018/testing_data'
+    #test_dir = '/home/liming/Documents/dataset/dataScienceBowl2018/testing_data'
+    test_dir = '/datasets/dsb2018_nuclei/stage1_test'
 
     # save segmenting results (prediction masks) to this folder
-    results_dir = '/home/liming/Documents/dataset/dataScienceBowl2018/results'
+    results_dir = '/datasets/dsb2018_nuclei/results'
 
-    num_workers = 1     	# number of threads for data loading
+    #modifying for cpu only
+    batch_size = 1
+    n_gpu = 0
+    num_workers = 0
+
+    #num_workers = 1     	# number of threads for data loading
     shuffle = True      	# shuffle the data set
-    batch_size = 16     		# GTX1060 3G Memory
-    epochs = 2			# number of epochs to train
+    #batch_size = 16     	# GTX1060 3G Memory
+    epochs = 2			    # number of epochs to train
     is_train = True     	# True for training, False for making prediction
     save_model = False   	# True for saving the model, False for not saving the model
 
-    n_gpu = 1				# number of GPUs
+    #n_gpu = 1				# number of GPUs
 
     learning_rate = 1e-3	# learning rage
     weight_decay = 1e-4		# weight decay
@@ -131,6 +138,8 @@ class Utils(object):
             dest = os.path.join(self.stage1_train_dest, id_)
             img = Image.open(os.path.join(path, 'images', id_ + '.png')).convert("RGB")
             mask = self.assemble_masks(path)
+            if not os.path.exists(dest):
+                os.mkdir(dest)
             img.save(os.path.join(dest, 'image.png'))
             Image.fromarray(mask).save(os.path.join(dest, 'mask.png'))
 
@@ -222,11 +231,22 @@ if __name__ == '__main__':
     """ Prepare training data and testing data
     read data and overlay masks and save to destination path
     """
-    stage1_train_src = '/home/liming/Documents/dataset/dataScienceBowl2018/stage1_train'
-    stage1_train_dest = '/home/liming/Documents/dataset/dataScienceBowl2018/combined'
-    stage1_test_src = '/home/liming/Documents/dataset/dataScienceBowl2018/stage1_test'
-    stage1_test_dest = '/home/liming/Documents/dataset/dataScienceBowl2018/testing_data'
+    stage1_train_src = '/datasets/dsb2018_nuclei/stage1_train'
+    stage1_train_dest = '/datasets/dsb2018_nuclei/combined'
+    stage1_test_src = '/datasets/dsb2018_nuclei/stage1_test'
+    stage1_test_dest = '/datasets/dsb2018_nuclei/testing_data'
 
+    path = '/datasets/dsb2018_nuclei/combined/fc22db33a2495f58f118bc182c0087e140df14ccb8dad51373e1a54381f683de/image.png'
+
+
+    # img = cv2.imread(path)
+    # cv2.imshow('test', img)
+    # cv2.waitKey()
+    # img = Image.open(path)
+    # import pylab
+    # pylab.figure()
+    # pylab.show(img)
+    # pylab.show()
     util = Utils(stage1_train_src, stage1_train_dest, stage1_test_src, stage1_test_dest)
     util.prepare_training_data()
     util.prepare_testing_data()
