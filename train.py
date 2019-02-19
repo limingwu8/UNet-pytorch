@@ -79,6 +79,7 @@ def run_test(model, test_loader, opt):
         - predictions: list, for each elements, numpy array (Width, Height)
         - img_ids: list, for each elements, an image id string
     """
+    model.eval()
     predictions = []
     img_ids = []
     for batch_idx, sample_batched in enumerate(test_loader):
